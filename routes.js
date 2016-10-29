@@ -221,10 +221,8 @@ router.route('/admin/data/:id')
     });
   });
 
-//dont forget to route to webapp once we make it!!!
-/*router.get('*', function(req, res){
+router.get('*', function(req, res){
   res.sendfile('./webApp/index.html');
 });
-*/
 
 module.exports = router;
