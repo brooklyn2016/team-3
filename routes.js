@@ -34,12 +34,12 @@ router.route('/student/data').post(function(req, res){
     trainerLink: req.body.trainerLink,
     score:       req.body.score,
     module:      req.body.module,
-    level:       req.body.moduel
+    level:       req.body.level
   }, function(err, data){
     res.send(err);
   });
 });
-
+/*
 //password authentification
 router.route('/student/data/authenticate').post(function(req, res){
   student.findOne({
@@ -93,7 +93,7 @@ getToken = function(headers){
     return null;
   }
 };
-
+*/
 router.route('/student/data/:id')
   //find data of single student by id using GET
   .get(function(req, res){
@@ -168,7 +168,7 @@ router.route('/trainer/data').post(function(req, res){
     res.send(err);
   });
 });
-
+/*
 //password authentification
 router.route('/trainer/data/authenticate').post(function(req, res){
   student.findOne({
@@ -188,7 +188,7 @@ router.route('/trainer/data/authenticate').post(function(req, res){
       }
   });
 });
-
+*/
 router.route('/trainer/data/:id')
   //find data of single trainer by id using GET
   .get(function(req, res){
@@ -257,7 +257,7 @@ router.route('/admin/data').post(function(req, res){
     res.send(err);
   });
 });
-
+/*
 //password authentification
 router.route('/admin/data/authenticate').post(function(req, res){
   student.findOne({
@@ -277,7 +277,7 @@ router.route('/admin/data/authenticate').post(function(req, res){
       }
   });
 });
-
+*/
 router.route('/admin/data/:id')
   //find data of single trainer by id using GET
   .get(function(req, res){
@@ -320,7 +320,7 @@ router.route('/admin/data/:id')
   });
 
 router.get('*', function(req, res){
-  res.sendfile('./webApp/partials/login.html');
+  res.sendfile('./webApp/index.html');
 });
 
 module.exports = router;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<style>
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+</style>
+<div class="chart">
+  <div style="width: 40px;">4</div>
+  <div style="width: 80px;">8</div>
+  <div style="width: 150px;">15</div>
+  <div style="width: 160px;">16</div>
+  <div style="width: 230px;">23</div>
+  <div style="width: 420px;">42</div>
+</div>
+
+<body ng-controller="AdminCtrl">
+<table class="table studenttable">
+    <tr>
+        <td><h3>All Students</h3></td>
+        <td></td>
+    </tr>
+    <thead>
+        <tr>
+            <th class="fluid">username</th>
+            <th class="fixed">module</th>
+            <th class="fluid">level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="student in students">
+            <td>{{student.username}}</td>
+            <td>{{student.module}}</td>
+            <td>{{studen.level}}</td>
+        </tr>
+    </tbody>
+</table>
+</body>
