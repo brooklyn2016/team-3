@@ -82,6 +82,8 @@ router.route('/student/data/:id')
     });
   });
 
+/*************************************************************************************************************************/
+//API for trainer database, basically the same funtions as the student database 
 //GET all trainer data using GET
 router.route('/trainer/data').get(function(req, res){
   trainer.find(function(err, data){
