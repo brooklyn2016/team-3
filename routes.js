@@ -61,6 +61,40 @@ router.route('/student/data/authenticate').post(function(req, res){
   });
 });
 
+//route to restricted info
+router.route('/student/data/memberinfo').get(passport.authenticate('jwt', {session: false}), function(req, res){
+  var token = getToken(req.headers);
+  if(token){
+    var decoded = jwt.decode(token, config.secret);
+    student.findOne({
+      username: decoded.username},
+      function(err, user){
+        if(err) throw err;
+
+        if(!user){
+          return res.status(403).send({success: false, msg: 'authentication failed. user not found'});
+        } else{
+          res.json({success: true, msg: 'welcome ' + user.firstName + '!'});
+        }
+    });
+  } else{
+    return res.status(403).send({success: false, msg: 'no token provided'});
+  }
+});
+
+getToken = function(headers){
+  if(headers && headers.authorization){
+    var parted = headers.authorization.split(' ');
+    if(parted.length === 2){
+      return parted[1];
+    } else{
+      return null;
+    }
+  } else{
+    return null;
+  }
+};
+
 router.route('/student/data/:id')
   //find data of single student by id using GET
   .get(function(req, res){
