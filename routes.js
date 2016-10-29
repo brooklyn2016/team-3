@@ -36,7 +36,51 @@ router.route('/student/data').post(function(req, res){
   });
 });
 
-
+router.route('/student/data/:id')
+  //find data of single student by id using GET
+  .get(function(req, res){
+    student.findById(req.params.id, function(err, data){
+      if(err){
+        res.send(err);
+      }
+      res.send(data);
+    });
+  })
+  //update student data with id using PUT
+  .put(function(req, res){
+    student.findById(req.params.id, function(err, data){
+      if(err){
+        res.send(err);
+      }
+      //update necessary parts of the data
+      data.firstName:   req.body.firstName;
+      data.lastName:    req.body.lastName;
+      data.username:    req.body.username;
+      data.password:    req.body.password;
+      data.signUpDate:  req.body.signUpDate;
+      data.lastActive:  req.body.lastActive;
+      data.trainerLink: req.body.trainerLink;
+      data.score:       req.body.score;
+      data.module:      req.body.module;
+      data.level:       req.body.moduel;
+      data.save(function(err){
+        if(err){
+          res.send(err);
+        }
+        res.json({message: "data updated successfully"});
+      });
+    });
+  })
+  //delete student data by id using DELETE
+  .delete(function(req, res){
+    student.remove({
+      _id: req.params.id}, function(err, data){
+        if(err){
+          res.send(err);
+        }
+        res.json({message: "data deleted"});
+    });
+  });
 
 //GET all trainer data using GET
 router.route('/trainer/data').get(function(req, res){
@@ -58,5 +102,10 @@ router.route('/admin/data').get(function(req, res){
   });
 });
 
+//dont forget to route to webapp once we make it!!!
+/*router.get('*', function(req, res){
+  res.sendfile('./webApp/index.html');
+});
+*/
 
 module.exports = router;
