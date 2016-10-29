@@ -1,0 +1,78 @@
+https://www.youtube.com/watch?v=5-ZFOhHQS68
+
+Newton's Laws of Motion 
+
+Newton's first law of motion states that a mass, whether it is
+at rest or in motion, will want to continue to do what it is 
+already doing, ie. rest or move, unless it is acted on by an
+unbalanced force.
+
+Newton's second law of motion states that a force applied to 
+an object, like a football, produces a proportional acceleration.
+In other words if an object is accelerating, there is a force on it.
+
+If a runner is in motion they will want to remain in motion,
+unless an unbalanced force acts on it. An unbalanced force, such
+as a lineback, must act on a runner to stop him. 
+
+How does a defensive tackle use inertia to prevent a quarterback
+sneak?
+
+The quarterback sneak is a play that pits the interior offensive
+line against the interior defensive line. Teams hope their
+line of players will create a massive wall, resistant to being
+moved. If the defensive tackles have the greater mass, they will
+be more difficult to move when they are at rest and more 
+difficult to stop when they are in motion.
+
+KEY WORDS-
+force - unit of measurement - Newton
+  - Something that causes a change in the motion of an object.
+    For example; in order for a football to move a force has to
+    be applied to it such as the quarterback throwing it. 
+  
+minigame idea 
+http://beautifulquiltfabric.com/images/5121.jpg
+have the user control a guy blocking the touchdown zone from the
+"other guy" trying to score, emphasizes first law of motion, in
+order for an object to stop (and prevent from scoring) a stopping
+force needs to be applied
+
+3 questions
+(1) - What is responsible for keeping an object at rest or 
+maintaining an objects constant velocity?
+-balanced forces
+-external forces
+-unbalanced forces
+-gravity
+
+(2) - According to Newton's first law of motion, what would happen
+to a receiver traveling towards the endzone at a constant velocity
+of 20mph in the absence of an unbalanced force?
+-The receiver would slow down and come to a stop
+-The receiver would continue moving towards the endzone at 20mph
+-The receiver would slow down but never reach 0 velocity
+-The receiver would slowly increase velocity 
+
+(3)- Consider an object at rest. Which of the following is true?
+- The forces acting on the object are balanced
+- The object has zero velocity
+- The object has no acceleration
+- all of the options are true
+
+Challenge 
+To test if you can apply what you've learned, go out there and test
+it out. We're going to have two trials. You will need a football and
+a friend. Have your friend prepare the football to be kicked. You will 
+kick it and record the distance traveled by the football. Now go back
+to the initial location and switch with your friend. Repeat the trial.
+The one who made the football travel a greater distance applied a 
+greater force.
+
+//Maybe here we have the app have a super basic table where the kids
+//input their distance traveled
+              //Distance traveled
+//Player one 
+//Player two
+
+//if p1 > p2, p1 wins.
