@@ -41,6 +41,7 @@ router.route('/student/data').post(function(req, res){
   });
 });
 
+//password authentification
 router.route('/student/data/authenticate').post(function(req, res){
   student.findOne({
     username: req.body.username}, function(err, user){
@@ -135,6 +136,26 @@ router.route('/trainer/data').post(function(req, res){
   });
 });
 
+//password authentification
+router.route('/trainer/data/authenticate').post(function(req, res){
+  student.findOne({
+    username: req.body.username}, function(err, user){
+      if(err) throw err;
+      if(!user){
+        res.send({success: false, msg: 'authentification failed. user not found'});
+      } else{
+        user.comparePassword(req.body.password, function(err, isMatch){
+          if(isMatch && !err){
+            var token  = jwt.encode(user, config.secret);
+            res.json({success: true, token: 'JWT ' + token});
+          } else {
+            res.send({success: false, msg: 'authentication failed. wrong password'});
+          }
+        });
+      }
+  });
+});
+
 router.route('/trainer/data/:id')
   //find data of single trainer by id using GET
   .get(function(req, res){
@@ -201,6 +222,26 @@ router.route('/admin/data').post(function(req, res){
     signUpDate:  req.body.signUpDate,
   }, function(err, data){
     res.send(err);
+  });
+});
+
+//password authentification
+router.route('/admin/data/authenticate').post(function(req, res){
+  student.findOne({
+    username: req.body.username}, function(err, user){
+      if(err) throw err;
+      if(!user){
+        res.send({success: false, msg: 'authentification failed. user not found'});
+      } else{
+        user.comparePassword(req.body.password, function(err, isMatch){
+          if(isMatch && !err){
+            var token  = jwt.encode(user, config.secret);
+            res.json({success: true, token: 'JWT ' + token});
+          } else {
+            res.send({success: false, msg: 'authentication failed. wrong password'});
+          }
+        });
+      }
   });
 });
 
