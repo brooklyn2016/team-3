@@ -40,7 +40,7 @@ router.route('/student/data').post(function(req, res){
     res.send(err);
   });
 });
-
+/*
 router.route('/student/data/authenticate').post(function(req, res){
   student.findOne({
     username: req.body.username}, function(err, user){
@@ -59,7 +59,7 @@ router.route('/student/data/authenticate').post(function(req, res){
       }
   });
 });
-
+*/
 router.route('/student/data/:id')
   //find data of single student by id using GET
   .get(function(req, res){

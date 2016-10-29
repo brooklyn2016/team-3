@@ -19,7 +19,7 @@ var studentDataSchema = new Schema({
   module:      Number,
   level:       Number
 });
-
+/*
 studentDataSchema.pre('save', function (next) {
     var user = this;
     if (this.isModified('password') || this.isNew) {
@@ -40,7 +40,6 @@ studentDataSchema.pre('save', function (next) {
     }
 });
 
-
 studentDataSchema.methods.comparePassword = function (passw, cb) {
     bcrypt.compare(passw, this.password, function (err, isMatch) {
         if (err) {
@@ -49,5 +48,5 @@ studentDataSchema.methods.comparePassword = function (passw, cb) {
         cb(null, isMatch);
     });
 };
-
+*/
 module.exports = mongoose.model('studentDataModel', studentDataSchema);

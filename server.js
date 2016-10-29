@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({'extended':'true'}));            // parse applica
 app.use(bodyParser.json());                                     // parse application/json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 app.use(methodOverride());
-app.use(passport.initialize());
+//app.use(passport.initialize());
 
 //set port
 var port = process.env.PORT || 1380;

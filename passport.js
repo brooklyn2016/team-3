@@ -2,7 +2,7 @@ var JwtStrategy = require('passport-jwt').Strategy;
 
 // load up the user model
 var User = require('./model/studentDataModel');
-var config = 'victorCruzRox'; //secret 
+var config = 'victorCruzRox'; //secret
 
 module.exports = function(passport) {
   var opts = {};
