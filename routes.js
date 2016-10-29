@@ -166,6 +166,61 @@ router.route('/admin/data').get(function(req, res){
   });
 });
 
+//create a new student data using POST
+router.route('/admin/data').post(function(req, res){
+  admin.create({
+    //set values from trainerDataModel
+    firstName:   req.body.firstName,
+    lastName:    req.body.lastName,
+    username:    req.body.username,
+    password:    req.body.password,
+    signUpDate:  req.body.signUpDate,
+  }, function(err, data){
+    res.send(err);
+  });
+});
+
+router.route('/admin/data/:id')
+  //find data of single trainer by id using GET
+  .get(function(req, res){
+    admin.findById(req.params.id, function(err, data){
+      if(err){
+        res.send(err);
+      }
+      res.send(data);
+    });
+  })
+  //update student data with id using PUT
+  .put(function(req, res){
+    admin.findById(req.params.id, function(err, data){
+      if(err){
+        res.send(err);
+      }
+      //update necessary parts of the data
+      data.firstName:   req.body.firstName;
+      data.lastName:    req.body.lastName;
+      data.username:    req.body.username;
+      data.password:    req.body.password;
+      data.signUpDate:  req.body.signUpDate;
+      data.save(function(err){
+        if(err){
+          res.send(err);
+        }
+        res.json({message: "data updated successfully"});
+      });
+    });
+  })
+  //delete student data by id using DELETE
+  .delete(function(req, res){
+    admin.remove({
+      _id: req.params.id}, function(err, data){
+        if(err){
+          res.send(err);
+        }
+        res.json({message: "data deleted"});
+    });
+  });
+
 //dont forget to route to webapp once we make it!!!
 /*router.get('*', function(req, res){
   res.sendfile('./webApp/index.html');
