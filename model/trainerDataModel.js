@@ -9,7 +9,7 @@ var trainerDataSchema = new Schema({
   signUpDate:  Date,
   lastActive:  Date,
   numStudents: Number,
-  link:        Number
+  studentLink: Number
 });
 
 module.exports = mongoose.model('trainerDataModel', trainerDataSchema);

@@ -83,7 +83,7 @@ router.route('/student/data/:id')
   });
 
 /*************************************************************************************************************************/
-//API for trainer database, basically the same funtions as the student database 
+//API for trainer database, basically the same funtions as the student database
 //GET all trainer data using GET
 router.route('/trainer/data').get(function(req, res){
   trainer.find(function(err, data){
@@ -94,6 +94,68 @@ router.route('/trainer/data').get(function(req, res){
   });
 });
 
+//create a new student data using POST
+router.route('/trainer/data').post(function(req, res){
+  trainer.create({
+    //set values from trainerDataModel
+    firstName:   req.body.firstName,
+    lastName:    req.body.lastName,
+    username:    req.body.username,
+    password:    req.body.password,
+    signUpDate:  req.body.signUpDate,
+    lastActive:  req.body.lastActive,
+    numStudents: req.body.numStudents,
+    studentLink:        req.body.studentLink
+  }, function(err, data){
+    res.send(err);
+  });
+});
+
+router.route('/trainer/data/:id')
+  //find data of single trainer by id using GET
+  .get(function(req, res){
+    trainer.findById(req.params.id, function(err, data){
+      if(err){
+        res.send(err);
+      }
+      res.send(data);
+    });
+  })
+  //update student data with id using PUT
+  .put(function(req, res){
+    trainer.findById(req.params.id, function(err, data){
+      if(err){
+        res.send(err);
+      }
+      //update necessary parts of the data
+      data.firstName:   req.body.firstName;
+      data.lastName:    req.body.lastName;
+      data.username:    req.body.username;
+      data.password:    req.body.password;
+      data.signUpDate:  req.body.signUpDate;
+      data.lastActive:  req.body.lastActive;
+      data.numStudents: req.body.numStudents;
+      data.studentLink: req.body.studentLink;
+      data.save(function(err){
+        if(err){
+          res.send(err);
+        }
+        res.json({message: "data updated successfully"});
+      });
+    });
+  })
+  //delete student data by id using DELETE
+  .delete(function(req, res){
+    trainer.remove({
+      _id: req.params.id}, function(err, data){
+        if(err){
+          res.send(err);
+        }
+        res.json({message: "data deleted"});
+    });
+  });
+
+/*************************************************************************************************************************/
 //GET all admin data using GET
 router.route('/admin/data').get(function(req, res){
   admin.find(function(err, data){
