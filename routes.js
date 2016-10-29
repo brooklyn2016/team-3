@@ -2,10 +2,12 @@ var mongoose = require('mongoose'),
 express = require('express'),
 router = express.Router(),
 passport = require('passport'),
+jwt = require('jwt-simple'),
 student = require('./model/studentDataModel'),
 trainer = require('./model/trainerDataModel'),
 admin = require('./model/adminDataModel');
 
+var config = 'victorCruzRox';
 //require('passport')(passport);
 
 /*************************************************************************************************************************/
@@ -41,7 +43,7 @@ router.route('/student/data').post(function(req, res){
 
 router.route('/student/data/authenticate').post(function(req, res){
   student.findOne({
-    name: req.body.username}, function(err, user){
+    username: req.body.username}, function(err, user){
       if(err) throw err;
       if(!user){
         res.send({success: false, msg: 'authentification failed. user not found'});
