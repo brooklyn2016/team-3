@@ -8,7 +8,6 @@ trainer = require('./model/trainerDataModel'),
 admin = require('./model/adminDataModel');
 
 var config = {"secret": 'victorCruzRox'};
-//require('passport')(passport);
 
 /*************************************************************************************************************************/
 //API for student database
@@ -321,7 +320,7 @@ router.route('/admin/data/:id')
   });
 
 router.get('*', function(req, res){
-  res.sendfile('./webApp/index.html');
+  res.sendfile('./webApp/partials/login.html');
 });
 
 module.exports = router;

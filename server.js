@@ -24,6 +24,6 @@ var port = process.env.PORT || 1380;
 //define prefix for routes, keeping it simple with /
 app.use('/', routes);
 
-app.listen(port, '0.0.0.0', function(){
+app.listen(port, function(){
   console.log("Express server listening on port " + port);
 });
