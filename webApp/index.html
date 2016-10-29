@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="VictorCruz">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <title>Victor Cruz Foundation</title>
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+      html {overflow-y: scroll;}
+      body {padding-top: 70px;}
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script><!-- load ui-router-->
+    <script src="js/main.js"></script>
+</head>
+
+<body ng-app="victorCruz">
+  <div class="container">
+      <!--navbar-->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="home">Victor Cruz</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a ui-sref="view-all">View</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a ui-sref="create">Create</a></li>
+          </ul>
+        </div>
+      </nav><!--/.navbar-->
+      <!--angular dynamic content-->
+      <div ui-view></div>
+  </div>
+</body>
+</html>
