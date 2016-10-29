@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if (self.defaults.value(forKey: "loggedIn") as! Bool == false) {
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.present(loginViewController, animated: true, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

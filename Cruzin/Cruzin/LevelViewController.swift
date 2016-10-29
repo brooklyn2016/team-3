@@ -13,7 +13,7 @@ class LevelViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet var categoryTitle:UILabel!
     
     var cat_title:String = ""
-    var levels:[String] = ["Inertia", "Acceleration", "Forces", "Reactions", "Gravity"]
+    var levels:[String] = ["Introduction", "Important Terms", "Challenge", "Relationship to Football", "Review"]
     var userLevel:Int = 2       //For testing, set to 2, for production set to 0
 
     override func viewDidLoad() {
@@ -27,24 +27,12 @@ class LevelViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return levels.count
+    @IBAction func backPressed(sender:UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        /*
-        cell.contentView.backgroundColor = UIColor.clear
-        
-        let whiteRoundedView:UIView = UIView(frame: CGRect(x: 0, y: 10, width: self.view.frame.size.width, height: 70))
-        whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
-        whiteRoundedView.layer.masksToBounds = false
-        whiteRoundedView.layer.cornerRadius = 2.0
-        whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: 1)
-        whiteRoundedView.layer.shadowOpacity = 0.2
-        
-        cell.contentView.addSubview(whiteRoundedView)
-        cell.contentView.sendSubview(toBack: whiteRoundedView)
-        */
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return levels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
