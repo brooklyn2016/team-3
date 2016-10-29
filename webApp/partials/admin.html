@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="node_modules/chart.js/Chart.min.js"></script>
 <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
-
+    <script src="/webApp/partials/funtions.js"></script>
     <title>Admin Board</title>
 <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
 
@@ -71,7 +71,7 @@
                     <div class="panel panel-primary text-center no-boder">
                         <div class="panel-body yellow">
                             <i class="fa fa-bar-chart-o fa-3x"></i>
-                            <h3></h3>
+                            <h3 ng-app="Active-Users"></h3>
                         </div>
                         <div class="panel-footer">
                             <span class="panel-eyecandy-title">Numbers of Active Users
@@ -81,16 +81,16 @@
                              <div class="panel panel-primary text-center no-boder">
                         <div class="panel-body red">
                             <i class="fa fa-thumbs-up fa-3x"></i>
-                            <h3></h3>
+                             <h3 ng-app="Enroll-Students"></h3>
                         </div>
                     <div class="panel-footer">
-                            <span class="panel-eyecandy-title">Number of Students Enrool
+                            <span class="panel-eyecandy-title">Number of Students Enroll
                         </div>
                     </div>
                     <div class="panel panel-primary text-center no-boder">
                         <div class="panel-body red">
                             <i class="fa fa-thumbs-up fa-3x"></i>
-                            <h3></h3>
+                             <h3 ng-app="Enroll-Instructors"></h3>
                         </div>
                         <div class="panel-footer">
                             <span class="panel-eyecandy-title">Numbers of Instructors Enroll
@@ -113,7 +113,7 @@
                     <!--Simple table example -->
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i>Red List
+                            <i class="fa fa-bar-chart-o fa-fw"></i>App Users
                             <div class="pull-right">
                                 
                             </div>
@@ -122,18 +122,24 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="table-responsive">
+                                    <div class="table-responsive" 
+                                         ng-app="myApp" ng-controller="table-admin"> 
+
                                         <table class="table table-bordered table-hover table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Student Name</th>
-                                                    <th>Last Date Active</th>
-                                                    <th>Current Module</th>
+                                                    <th>User in DB</th>
+                                                    <th>Last Active Day</th>
+                                                    
                                                 
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                
+                                                <tr ng-repeat="x in names">
+                                            <td>{{ x.Name }}</td>
+                                            <td>{{ x.Active }}</td>
+                                                   
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -152,26 +158,7 @@
              
             </div>
 
-            <div class="row">
-             <div class="col-lg-4">
-                    <!-- Donut Example-->
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i>
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
-                        </div>
-
-                    </div>
-                    <!--End Donut Example-->
-                </div>
-            
-         
-
-
-        </div>
+     
         <!-- end page-wrapper -->
 
     </div>
@@ -184,6 +171,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+ 
 </body>
 
 </html> 
