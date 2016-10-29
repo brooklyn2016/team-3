@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D226F91C1DC4826200CEF429 /* LevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226F91B1DC4826200CEF429 /* LevelTableViewCell.swift */; };
 		D295F9101DC4C79500E91F1B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295F90F1DC4C79500E91F1B /* SignUpViewController.swift */; };
+		D295F9121DC4D94B00E91F1B /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295F9111DC4D94B00E91F1B /* IntroductionViewController.swift */; };
+		D295F9141DC4E24A00E91F1B /* Curriculum in Resources */ = {isa = PBXBuildFile; fileRef = D295F9131DC4E24A00E91F1B /* Curriculum */; };
 		D2CA6EA51DC45A0500D4AFF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CA6EA41DC45A0500D4AFF3 /* AppDelegate.swift */; };
 		D2CA6EA71DC45A0500D4AFF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CA6EA61DC45A0500D4AFF3 /* ViewController.swift */; };
 		D2CA6EAA1DC45A0500D4AFF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CA6EA81DC45A0500D4AFF3 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		D226F91B1DC4826200CEF429 /* LevelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelTableViewCell.swift; sourceTree = "<group>"; };
 		D295F90F1DC4C79500E91F1B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D295F9111DC4D94B00E91F1B /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		D295F9131DC4E24A00E91F1B /* Curriculum */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Curriculum; sourceTree = "<group>"; };
 		D2CA6EA11DC45A0400D4AFF3 /* Cruzin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cruzin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CA6EA41DC45A0500D4AFF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CA6EA61DC45A0500D4AFF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,11 +97,13 @@
 				D2CA6EA61DC45A0500D4AFF3 /* ViewController.swift */,
 				D2ED106C1DC479BC0074196B /* LevelViewController.swift */,
 				D226F91B1DC4826200CEF429 /* LevelTableViewCell.swift */,
+				D295F9111DC4D94B00E91F1B /* IntroductionViewController.swift */,
 				D2CA6EA81DC45A0500D4AFF3 /* Main.storyboard */,
 				D2CA6EAE1DC45A0500D4AFF3 /* Assets.xcassets */,
 				D2CA6EB01DC45A0500D4AFF3 /* LaunchScreen.storyboard */,
 				D2CA6EB31DC45A0500D4AFF3 /* Info.plist */,
 				D2CA6EAB1DC45A0500D4AFF3 /* Cruzin.xcdatamodeld */,
+				D295F9131DC4E24A00E91F1B /* Curriculum */,
 			);
 			path = Cruzin;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CA6EB21DC45A0500D4AFF3 /* LaunchScreen.storyboard in Resources */,
+				D295F9141DC4E24A00E91F1B /* Curriculum in Resources */,
 				D2CA6EAF1DC45A0500D4AFF3 /* Assets.xcassets in Resources */,
 				D2CA6EAA1DC45A0500D4AFF3 /* Main.storyboard in Resources */,
 			);
@@ -216,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D295F9121DC4D94B00E91F1B /* IntroductionViewController.swift in Sources */,
 				D2ED106B1DC479B50074196B /* LoginViewController.swift in Sources */,
 				D295F9101DC4C79500E91F1B /* SignUpViewController.swift in Sources */,
 				D2ED106D1DC479BC0074196B /* LevelViewController.swift in Sources */,

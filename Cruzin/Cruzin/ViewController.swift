@@ -57,6 +57,7 @@ class ViewController: UIViewController {
         }
         
         viewController.cat_title = module_name
+        viewController.module = module
     }
 }
 

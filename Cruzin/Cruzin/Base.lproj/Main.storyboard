@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZPb-Og-uvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f72-Rc-713">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -586,6 +586,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xfq-eO-exo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Introduction View Controller-->
+        <scene sceneID="AI7-Od-ykJ">
+            <objects>
+                <viewController id="f72-Rc-713" customClass="IntroductionViewController" customModule="Cruzin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LS1-Bv-0IZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cbx-iy-fYL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="96T-f5-MrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okr-EU-hnL">
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4z-SZ-pwh" userLabel="MovieView">
+                                <color key="backgroundColor" red="0.74192398790000003" green="0.1270827353" blue="0.1526769996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="0at-it-YJX"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6t-ha-SjT" userLabel="pdf View">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="s4z-SZ-pwh" secondAttribute="trailing" constant="-16" id="7bc-pe-DsA"/>
+                            <constraint firstItem="okr-EU-hnL" firstAttribute="leading" secondItem="96T-f5-MrQ" secondAttribute="leadingMargin" constant="-16" id="CoQ-BV-tSu"/>
+                            <constraint firstItem="okr-EU-hnL" firstAttribute="top" secondItem="LS1-Bv-0IZ" secondAttribute="bottom" constant="190" id="G74-OJ-BMu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="okr-EU-hnL" secondAttribute="trailing" constant="-16" id="IDS-yz-jVu"/>
+                            <constraint firstItem="s4z-SZ-pwh" firstAttribute="leading" secondItem="96T-f5-MrQ" secondAttribute="leadingMargin" constant="-16" id="SRO-Bu-YG4"/>
+                            <constraint firstItem="cbx-iy-fYL" firstAttribute="top" secondItem="I6t-ha-SjT" secondAttribute="bottom" id="UtN-Rq-KgX"/>
+                            <constraint firstItem="cbx-iy-fYL" firstAttribute="top" secondItem="okr-EU-hnL" secondAttribute="bottom" id="VKv-ZQ-U3m"/>
+                            <constraint firstItem="s4z-SZ-pwh" firstAttribute="top" secondItem="LS1-Bv-0IZ" secondAttribute="bottom" constant="-20" id="aKW-jm-ZB0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I6t-ha-SjT" secondAttribute="trailing" constant="-16" id="abM-iT-lVR"/>
+                            <constraint firstItem="I6t-ha-SjT" firstAttribute="leading" secondItem="96T-f5-MrQ" secondAttribute="leadingMargin" constant="-16" id="az3-Gg-0dh"/>
+                            <constraint firstItem="I6t-ha-SjT" firstAttribute="top" secondItem="LS1-Bv-0IZ" secondAttribute="bottom" constant="-20" id="zcb-R3-kuW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="I6t-ha-SjT" id="ae9-Wq-s3x"/>
+                        <outlet property="pdfView_1" destination="okr-EU-hnL" id="po4-Ls-IrW"/>
+                        <outlet property="videoView" destination="s4z-SZ-pwh" id="Dsk-qW-PS8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90D-wC-zKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>

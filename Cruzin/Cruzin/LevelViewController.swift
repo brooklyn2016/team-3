@@ -13,6 +13,7 @@ class LevelViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet var categoryTitle:UILabel!
     
     var cat_title:String = ""
+    var module:Int = 0
     var levels:[String] = ["Introduction", "Important Terms", "Challenge", "Relationship to Football", "Review"]
     var userLevel:Int = 2       //For testing, set to 2, for production set to 0
 
@@ -30,6 +31,7 @@ class LevelViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func backPressed(sender:UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return levels.count
