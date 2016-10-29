@@ -32,6 +32,13 @@ class LevelViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.navigationController?.popViewController(animated: true)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var cell = tableView.cellForRow(at: indexPath) as! LevelTableViewCell
+        cell.line.alpha = 1
+        
+        let level = indexPath.row + 1
+        self.performSegue(withIdentifier: "ShowDetailViewController", sender: level)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return levels.count
@@ -45,9 +52,26 @@ class LevelViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.line.alpha = 0.0
         cell.lock1.alpha = 0.0
         cell.lock2.alpha = 0.0
+        
+        if (indexPath.row < self.userLevel) {
+            cell.line.alpha = 1.0
+            cell.lock1.alpha = 0.0
+            cell.lock2.alpha = 0.0
+        } else if (indexPath.row > self.userLevel) {
+            cell.line.alpha = 0.0
+            cell.lock1.alpha = 1.0
+            cell.lock2.alpha = 1.0
+        }
+        
         cell.number.text = "\(indexPath.row + 1)"
         cell.title.text = self.levels[indexPath.row]
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let level:Int = sender as! Int
+        let viewController = segue.destination as! IntroductionViewController
+        viewController.level = level
     }
 }

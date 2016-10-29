@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f72-Rc-713">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZPb-Og-uvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -47,7 +47,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teq-OH-ofM">
                                 <constraints>
@@ -349,7 +349,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="iD6-b2-rOk">
                                 <constraints>
@@ -362,7 +362,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aU-rT-qa2">
                                 <constraints>
@@ -608,9 +608,19 @@
                                     <constraint firstAttribute="height" constant="210" id="0at-it-YJX"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6t-ha-SjT" userLabel="pdf View">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6t-ha-SjT" userLabel="pdf View">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiG-IO-25l">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PPn-XA-Ft8"/>
+                                    <constraint firstAttribute="width" constant="50" id="QMK-BT-PXN"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="backPressedWithSender:" destination="f72-Rc-713" eventType="touchUpInside" id="IwS-sj-PpY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -620,10 +630,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="okr-EU-hnL" secondAttribute="trailing" constant="-16" id="IDS-yz-jVu"/>
                             <constraint firstItem="s4z-SZ-pwh" firstAttribute="leading" secondItem="96T-f5-MrQ" secondAttribute="leadingMargin" constant="-16" id="SRO-Bu-YG4"/>
                             <constraint firstItem="cbx-iy-fYL" firstAttribute="top" secondItem="I6t-ha-SjT" secondAttribute="bottom" id="UtN-Rq-KgX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yiG-IO-25l" secondAttribute="leading" id="UzJ-e7-5kX"/>
                             <constraint firstItem="cbx-iy-fYL" firstAttribute="top" secondItem="okr-EU-hnL" secondAttribute="bottom" id="VKv-ZQ-U3m"/>
                             <constraint firstItem="s4z-SZ-pwh" firstAttribute="top" secondItem="LS1-Bv-0IZ" secondAttribute="bottom" constant="-20" id="aKW-jm-ZB0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="I6t-ha-SjT" secondAttribute="trailing" constant="-16" id="abM-iT-lVR"/>
                             <constraint firstItem="I6t-ha-SjT" firstAttribute="leading" secondItem="96T-f5-MrQ" secondAttribute="leadingMargin" constant="-16" id="az3-Gg-0dh"/>
+                            <constraint firstItem="yiG-IO-25l" firstAttribute="top" secondItem="LS1-Bv-0IZ" secondAttribute="bottom" id="bUv-wf-hLa"/>
                             <constraint firstItem="I6t-ha-SjT" firstAttribute="top" secondItem="LS1-Bv-0IZ" secondAttribute="bottom" constant="-20" id="zcb-R3-kuW"/>
                         </constraints>
                     </view>

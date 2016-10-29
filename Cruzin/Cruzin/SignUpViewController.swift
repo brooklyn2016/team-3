@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class SignUpViewController: UIViewController {
     @IBOutlet var firstName:UITextField!
@@ -46,7 +45,6 @@ class SignUpViewController: UIViewController {
         
         //Post data and save local data
         let currentDate = NSDate()
-        
         
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }

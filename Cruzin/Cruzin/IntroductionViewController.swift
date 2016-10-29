@@ -49,6 +49,22 @@ class IntroductionViewController: UIViewController {
             let pdfLoc = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Curriculum/Module3/key_terms", ofType: "pdf")!)
             let request = NSURLRequest(url: pdfLoc as URL)
             self.pdfView.loadRequest(request as URLRequest)
+            break
+        case 3:
+            let pdfLoc = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Curriculum/Module3/challenge", ofType: "pdf")!)
+            let request = NSURLRequest(url: pdfLoc as URL)
+            self.pdfView.loadRequest(request as URLRequest)
+            break
+        case 4:
+            let pdfLoc = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Curriculum/Module3/relation", ofType: "pdf")!)
+            let request = NSURLRequest(url: pdfLoc as URL)
+            self.pdfView.loadRequest(request as URLRequest)
+            break
+        case 5:
+            let pdfLoc = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Curriculum/Module3/review", ofType: "pdf")!)
+            let request = NSURLRequest(url: pdfLoc as URL)
+            self.pdfView.loadRequest(request as URLRequest)
+            break
         default:
             break
         }
@@ -57,6 +73,10 @@ class IntroductionViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func backPressed(sender:UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
 
 }
