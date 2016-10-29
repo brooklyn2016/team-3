@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D226F91C1DC4826200CEF429 /* LevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226F91B1DC4826200CEF429 /* LevelTableViewCell.swift */; };
+		D295F9101DC4C79500E91F1B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295F90F1DC4C79500E91F1B /* SignUpViewController.swift */; };
+		D2CA6EA51DC45A0500D4AFF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CA6EA41DC45A0500D4AFF3 /* AppDelegate.swift */; };
+		D2CA6EA71DC45A0500D4AFF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CA6EA61DC45A0500D4AFF3 /* ViewController.swift */; };
+		D2CA6EAA1DC45A0500D4AFF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CA6EA81DC45A0500D4AFF3 /* Main.storyboard */; };
+		D2CA6EAD1DC45A0500D4AFF3 /* Cruzin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2CA6EAB1DC45A0500D4AFF3 /* Cruzin.xcdatamodeld */; };
+		D2CA6EAF1DC45A0500D4AFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CA6EAE1DC45A0500D4AFF3 /* Assets.xcassets */; };
+		D2CA6EB21DC45A0500D4AFF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CA6EB01DC45A0500D4AFF3 /* LaunchScreen.storyboard */; };
+		D2CA6EBD1DC45A0500D4AFF3 /* CruzinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CA6EBC1DC45A0500D4AFF3 /* CruzinUITests.swift */; };
+		D2ED106B1DC479B50074196B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED106A1DC479B50074196B /* LoginViewController.swift */; };
+		D2ED106D1DC479BC0074196B /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED106C1DC479BC0074196B /* LevelViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2CA6EB91DC45A0500D4AFF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CA6E991DC45A0400D4AFF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CA6EA01DC45A0400D4AFF3;
+			remoteInfo = Cruzin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D226F91B1DC4826200CEF429 /* LevelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelTableViewCell.swift; sourceTree = "<group>"; };
+		D295F90F1DC4C79500E91F1B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D2CA6EA11DC45A0400D4AFF3 /* Cruzin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cruzin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CA6EA41DC45A0500D4AFF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2CA6EA61DC45A0500D4AFF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2CA6EA91DC45A0500D4AFF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2CA6EAC1DC45A0500D4AFF3 /* Cruzin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cruzin.xcdatamodel; sourceTree = "<group>"; };
+		D2CA6EAE1DC45A0500D4AFF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2CA6EB11DC45A0500D4AFF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2CA6EB31DC45A0500D4AFF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CA6EB81DC45A0500D4AFF3 /* CruzinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CruzinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CA6EBC1DC45A0500D4AFF3 /* CruzinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruzinUITests.swift; sourceTree = "<group>"; };
+		D2CA6EBE1DC45A0500D4AFF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ED106A1DC479B50074196B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2ED106C1DC479BC0074196B /* LevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2CA6E9E1DC45A0400D4AFF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CA6EB51DC45A0500D4AFF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2CA6E981DC45A0400D4AFF3 = {
+			isa = PBXGroup;
+			children = (
+				D2CA6EA31DC45A0400D4AFF3 /* Cruzin */,
+				D2CA6EBB1DC45A0500D4AFF3 /* CruzinUITests */,
+				D2CA6EA21DC45A0400D4AFF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2CA6EA21DC45A0400D4AFF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2CA6EA11DC45A0400D4AFF3 /* Cruzin.app */,
+				D2CA6EB81DC45A0500D4AFF3 /* CruzinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2CA6EA31DC45A0400D4AFF3 /* Cruzin */ = {
+			isa = PBXGroup;
+			children = (
+				D2CA6EA41DC45A0500D4AFF3 /* AppDelegate.swift */,
+				D2ED106A1DC479B50074196B /* LoginViewController.swift */,
+				D295F90F1DC4C79500E91F1B /* SignUpViewController.swift */,
+				D2CA6EA61DC45A0500D4AFF3 /* ViewController.swift */,
+				D2ED106C1DC479BC0074196B /* LevelViewController.swift */,
+				D226F91B1DC4826200CEF429 /* LevelTableViewCell.swift */,
+				D2CA6EA81DC45A0500D4AFF3 /* Main.storyboard */,
+				D2CA6EAE1DC45A0500D4AFF3 /* Assets.xcassets */,
+				D2CA6EB01DC45A0500D4AFF3 /* LaunchScreen.storyboard */,
+				D2CA6EB31DC45A0500D4AFF3 /* Info.plist */,
+				D2CA6EAB1DC45A0500D4AFF3 /* Cruzin.xcdatamodeld */,
+			);
+			path = Cruzin;
+			sourceTree = "<group>";
+		};
+		D2CA6EBB1DC45A0500D4AFF3 /* CruzinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CA6EBC1DC45A0500D4AFF3 /* CruzinUITests.swift */,
+				D2CA6EBE1DC45A0500D4AFF3 /* Info.plist */,
+			);
+			path = CruzinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2CA6EA01DC45A0400D4AFF3 /* Cruzin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CA6EC11DC45A0500D4AFF3 /* Build configuration list for PBXNativeTarget "Cruzin" */;
+			buildPhases = (
+				D2CA6E9D1DC45A0400D4AFF3 /* Sources */,
+				D2CA6E9E1DC45A0400D4AFF3 /* Frameworks */,
+				D2CA6E9F1DC45A0400D4AFF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cruzin;
+			productName = Cruzin;
+			productReference = D2CA6EA11DC45A0400D4AFF3 /* Cruzin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2CA6EB71DC45A0500D4AFF3 /* CruzinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CA6EC41DC45A0500D4AFF3 /* Build configuration list for PBXNativeTarget "CruzinUITests" */;
+			buildPhases = (
+				D2CA6EB41DC45A0500D4AFF3 /* Sources */,
+				D2CA6EB51DC45A0500D4AFF3 /* Frameworks */,
+				D2CA6EB61DC45A0500D4AFF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CA6EBA1DC45A0500D4AFF3 /* PBXTargetDependency */,
+			);
+			name = CruzinUITests;
+			productName = CruzinUITests;
+			productReference = D2CA6EB81DC45A0500D4AFF3 /* CruzinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2CA6E991DC45A0400D4AFF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Scott;
+				TargetAttributes = {
+					D2CA6EA01DC45A0400D4AFF3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NEY2FHL5G3;
+						ProvisioningStyle = Automatic;
+					};
+					D2CA6EB71DC45A0500D4AFF3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NEY2FHL5G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2CA6EA01DC45A0400D4AFF3;
+					};
+				};
+			};
+			buildConfigurationList = D2CA6E9C1DC45A0400D4AFF3 /* Build configuration list for PBXProject "Cruzin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2CA6E981DC45A0400D4AFF3;
+			productRefGroup = D2CA6EA21DC45A0400D4AFF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2CA6EA01DC45A0400D4AFF3 /* Cruzin */,
+				D2CA6EB71DC45A0500D4AFF3 /* CruzinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2CA6E9F1DC45A0400D4AFF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CA6EB21DC45A0500D4AFF3 /* LaunchScreen.storyboard in Resources */,
+				D2CA6EAF1DC45A0500D4AFF3 /* Assets.xcassets in Resources */,
+				D2CA6EAA1DC45A0500D4AFF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CA6EB61DC45A0500D4AFF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2CA6E9D1DC45A0400D4AFF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ED106B1DC479B50074196B /* LoginViewController.swift in Sources */,
+				D295F9101DC4C79500E91F1B /* SignUpViewController.swift in Sources */,
+				D2ED106D1DC479BC0074196B /* LevelViewController.swift in Sources */,
+				D226F91C1DC4826200CEF429 /* LevelTableViewCell.swift in Sources */,
+				D2CA6EAD1DC45A0500D4AFF3 /* Cruzin.xcdatamodeld in Sources */,
+				D2CA6EA71DC45A0500D4AFF3 /* ViewController.swift in Sources */,
+				D2CA6EA51DC45A0500D4AFF3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CA6EB41DC45A0500D4AFF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CA6EBD1DC45A0500D4AFF3 /* CruzinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2CA6EBA1DC45A0500D4AFF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CA6EA01DC45A0400D4AFF3 /* Cruzin */;
+			targetProxy = D2CA6EB91DC45A0500D4AFF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2CA6EA81DC45A0500D4AFF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CA6EA91DC45A0500D4AFF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2CA6EB01DC45A0500D4AFF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CA6EB11DC45A0500D4AFF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2CA6EBF1DC45A0500D4AFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2CA6EC01DC45A0500D4AFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2CA6EC21DC45A0500D4AFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NEY2FHL5G3;
+				INFOPLIST_FILE = Cruzin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = team3.Cruzin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2CA6EC31DC45A0500D4AFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NEY2FHL5G3;
+				INFOPLIST_FILE = Cruzin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = team3.Cruzin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D2CA6EC51DC45A0500D4AFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NEY2FHL5G3;
+				INFOPLIST_FILE = CruzinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = team3.CruzinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Cruzin;
+			};
+			name = Debug;
+		};
+		D2CA6EC61DC45A0500D4AFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NEY2FHL5G3;
+				INFOPLIST_FILE = CruzinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = team3.CruzinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Cruzin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2CA6E9C1DC45A0400D4AFF3 /* Build configuration list for PBXProject "Cruzin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CA6EBF1DC45A0500D4AFF3 /* Debug */,
+				D2CA6EC01DC45A0500D4AFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CA6EC11DC45A0500D4AFF3 /* Build configuration list for PBXNativeTarget "Cruzin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CA6EC21DC45A0500D4AFF3 /* Debug */,
+				D2CA6EC31DC45A0500D4AFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CA6EC41DC45A0500D4AFF3 /* Build configuration list for PBXNativeTarget "CruzinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CA6EC51DC45A0500D4AFF3 /* Debug */,
+				D2CA6EC61DC45A0500D4AFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2CA6EAB1DC45A0500D4AFF3 /* Cruzin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2CA6EAC1DC45A0500D4AFF3 /* Cruzin.xcdatamodel */,
+			);
+			currentVersion = D2CA6EAC1DC45A0500D4AFF3 /* Cruzin.xcdatamodel */;
+			path = Cruzin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2CA6E991DC45A0400D4AFF3 /* Project object */;
+}
