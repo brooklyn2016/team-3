@@ -53,16 +53,16 @@ router.route('/student/data/:id')
         res.send(err);
       }
       //update necessary parts of the data
-      data.firstName:   req.body.firstName;
-      data.lastName:    req.body.lastName;
-      data.username:    req.body.username;
-      data.password:    req.body.password;
-      data.signUpDate:  req.body.signUpDate;
-      data.lastActive:  req.body.lastActive;
-      data.trainerLink: req.body.trainerLink;
-      data.score:       req.body.score;
-      data.module:      req.body.module;
-      data.level:       req.body.moduel;
+      data.firstName   = req.body.firstName;
+      data.lastName    = req.body.lastName;
+      data.username    = req.body.username;
+      data.password    = req.body.password;
+      data.signUpDate  = req.body.signUpDate;
+      data.lastActive  = req.body.lastActive;
+      data.trainerLink = req.body.trainerLink;
+      data.score       = req.body.score;
+      data.module      = req.body.module;
+      data.level       = req.body.moduel;
       data.save(function(err){
         if(err){
           res.send(err);
@@ -128,14 +128,14 @@ router.route('/trainer/data/:id')
         res.send(err);
       }
       //update necessary parts of the data
-      data.firstName:   req.body.firstName;
-      data.lastName:    req.body.lastName;
-      data.username:    req.body.username;
-      data.password:    req.body.password;
-      data.signUpDate:  req.body.signUpDate;
-      data.lastActive:  req.body.lastActive;
-      data.numStudents: req.body.numStudents;
-      data.studentLink: req.body.studentLink;
+      data.firstName   = req.body.firstName;
+      data.lastName    = req.body.lastName;
+      data.username    = req.body.username;
+      data.password    = req.body.password;
+      data.signUpDate  = req.body.signUpDate;
+      data.lastActive  = req.body.lastActive;
+      data.numStudents = req.body.numStudents;
+      data.studentLink = req.body.studentLink;
       data.save(function(err){
         if(err){
           res.send(err);
@@ -197,11 +197,11 @@ router.route('/admin/data/:id')
         res.send(err);
       }
       //update necessary parts of the data
-      data.firstName:   req.body.firstName;
-      data.lastName:    req.body.lastName;
-      data.username:    req.body.username;
-      data.password:    req.body.password;
-      data.signUpDate:  req.body.signUpDate;
+      data.firstName   = req.body.firstName;
+      data.lastName    = req.body.lastName;
+      data.username    = req.body.username;
+      data.password    = req.body.password;
+      data.signUpDate  = req.body.signUpDate;
       data.save(function(err){
         if(err){
           res.send(err);
