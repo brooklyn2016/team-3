@@ -10,7 +10,8 @@ var studentDataSchema = new Schema({
   lastActive:  Date,
   trainerLink: Number,
   score:       Number,
-  progress:    Number
+  module:      Number,
+  level:       Number
 });
 
 module.exports = mongoose.model('studentDataModel', studentDataSchema);
